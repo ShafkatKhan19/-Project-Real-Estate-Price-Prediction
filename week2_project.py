@@ -80,8 +80,9 @@ for idx, col in enumerate(df.columns):
     ax.set_ylabel('Count', fontsize=8)
     ax.grid(True, alpha=0.3)
 plt.tight_layout()
-plt.savefig('feature_histograms.png', dpi=150, bbox_inches='tight')
+plt.savefig('C:\\Users\\User\\Desktop\\feature_histograms.png', dpi=150, bbox_inches='tight')
 print("\n✅ Saved: feature_histograms.png")
+plt.show()
 plt.close()
 
 # Visualization 2: Correlation heatmap
@@ -90,8 +91,9 @@ sns.heatmap(corr, annot=True, fmt='.2f', cmap='coolwarm', center=0,
             linewidths=0.5, square=True, cbar_kws={'shrink': 0.8})
 plt.title('Feature Correlation Matrix', fontsize=14, fontweight='bold')
 plt.tight_layout()
-plt.savefig('correlation_heatmap.png', dpi=150, bbox_inches='tight')
+plt.savefig('C:\\Users\\User\\Desktop\\correlation_heatmap.png', dpi=150, bbox_inches='tight')
 print("✅ Saved: correlation_heatmap.png")
+plt.show()
 plt.close()
 
 # Data preparation
@@ -159,8 +161,9 @@ plt.title(f'Linear Regression: Actual vs Predicted\nR² = {r2_lr:.3f}, RMSE = {r
 plt.legend()
 plt.grid(True, alpha=0.3)
 plt.tight_layout()
-plt.savefig('lr_actual_vs_predicted.png', dpi=150, bbox_inches='tight')
+plt.savefig('C:\\Users\\User\\Desktop\\lr_actual_vs_predicted.png', dpi=150, bbox_inches='tight')
 print("\n✅ Saved: lr_actual_vs_predicted.png")
+plt.show()
 plt.close()
 
 # ─────────────────────────────────────────────────────────────
@@ -214,8 +217,9 @@ plt.title('Decision Tree: Training vs Test RMSE by Depth\n(Gap = Overfitting)',
 plt.legend(fontsize=11)
 plt.grid(True, alpha=0.3)
 plt.tight_layout()
-plt.savefig('dt_depth_comparison.png', dpi=150, bbox_inches='tight')
+plt.savefig('C:\\Users\\User\\Desktop\\dt_depth_comparison.png', dpi=150, bbox_inches='tight')
 print("✅ Saved: dt_depth_comparison.png")
+plt.show()
 plt.close()
 
 # Visualization 5: Feature importances
@@ -232,8 +236,9 @@ plt.title(f'Decision Tree Feature Importances (depth={best_depth})',
           fontsize=13, fontweight='bold')
 plt.grid(True, alpha=0.3, axis='x')
 plt.tight_layout()
-plt.savefig('dt_feature_importances.png', dpi=150, bbox_inches='tight')
+plt.savefig('C:\\Users\\User\\Desktop\\dt_feature_importances.png', dpi=150, bbox_inches='tight')
 print("✅ Saved: dt_feature_importances.png")
+plt.show()
 plt.close()
 
 print("\nTop 3 most important features (Decision Tree):")
@@ -311,8 +316,9 @@ for ax, y_pred, title in zip(
 
 plt.suptitle('Classification Confusion Matrices', fontsize=14, fontweight='bold', y=1.02)
 plt.tight_layout()
-plt.savefig('classification_confusion_matrices.png', dpi=150, bbox_inches='tight')
+plt.savefig('C:\\Users\\User\\Desktop\\classification_confusion_matrices.png', dpi=150, bbox_inches='tight')
 print("\n✅ Saved: classification_confusion_matrices.png")
+plt.show()
 plt.close()
 
 # ─────────────────────────────────────────────────────────────
