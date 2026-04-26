@@ -11,6 +11,8 @@ Parts:
   5. Model Comparison & Analysis
 """
 
+import matplotlib
+matplotlib.use("TkAgg")
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
